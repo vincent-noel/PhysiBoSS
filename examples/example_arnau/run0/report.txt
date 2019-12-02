@@ -1,0 +1,2 @@
+simulated time	num cells	num division	num death	wall time	oxygen	tnf
+0	948	948	0	0.0233662	18999	274.461
