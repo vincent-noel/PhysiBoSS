@@ -23,7 +23,7 @@ CUR_DIR = $(shell pwd)
 ### MaBoSS directory
 BOSS := MaBoSS-env-2.0/engine
 BOSS_SRC := $(BOSS)/src
-LIB := -L$(CUR_DIR)/$(BOSS)/lib -lMaBoSS
+LIB := -L$(CUR_DIR)/$(BOSS)/lib -lMaBoSS_100n
 INC := -I$(CUR_DIR)/$(BOSS)/include
 
 #---------- Folders to look in
@@ -88,7 +88,7 @@ plot: $(BIN_DIR) $(MAIN3)
 	$(COMPILE_COMMAND) $(INC) -o $(BIN_DIR)/PhysiBoSS_Plot ./src/main/plotTxt.cpp $(BUILD_DIR)/*.o $(LIB) -ldl
 
 maboss:
-	cd $(BOSS_SRC) && make clean && make install_alib	
+	cd $(BOSS_SRC) && make clean && make MAXNODES=100 install_alib
 
 #---------- Generate doc with Doxygen
 .PHONY: doc clean cleanbin mrproper zip
