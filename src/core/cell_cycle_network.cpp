@@ -196,6 +196,19 @@ void CellCycleNetwork::run_maboss(double dt, double t)
 	}
 	//if ( !converged )
 	//	randomize_nodes();
+	
+	std::cout << "NetworkState : ";
+	networkState.displayOneLine(std::cout, maboss->getNetwork());
+	std::cout << std::endl;
+
+	int activation = 0;
+
+	for(unsigned int i=0; i < nodes.size(); i++)
+		activation += nodes[i];
+
+	if (activation > 0)
+		std::cout << "MaBoSS active Nodes: " << activation << std::endl;
+	
 	from_nodes_to_cell(dt, t);
 	
 	set_time_to_update();

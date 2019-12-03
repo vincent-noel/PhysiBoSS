@@ -99,6 +99,10 @@ class MaBossNetwork
 
 		/** \brief Write current properties to output stream */
 		void write_properties(std::ostream& os);
+
+		Network* getNetwork() {
+			return network;
+		}
 };
 
 #endif
