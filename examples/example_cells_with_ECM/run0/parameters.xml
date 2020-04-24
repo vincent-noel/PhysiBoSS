@@ -7,7 +7,7 @@
 	<mechanics_time_step> 0.1 </mechanics_time_step>
 	<cell_cycle_time_step> 2 </cell_cycle_time_step>
 	<maximal_time> 3300.0 </maximal_time>
-	<output_interval> 30 </output_interval>
+	<output_interval> 20 </output_interval>
 	<write_passive_cells> 0 </write_passive_cells>
 	<minimum_voxel_size> 10 </minimum_voxel_size>
 	<bounding_box_xmin> -400 </bounding_box_xmin>
