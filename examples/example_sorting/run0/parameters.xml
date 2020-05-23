@@ -5,8 +5,8 @@
 	<time_step> 0.02 </time_step>
 	<mechanics_time_step> 0.1 </mechanics_time_step>
 	<cell_cycle_time_step> 2 </cell_cycle_time_step>
-	<maximal_time> 300 </maximal_time>
-	<output_interval> 10 </output_interval>
+	<maximal_time> 2000 </maximal_time>
+	<output_interval> 30 </output_interval>
 	<output_densities> 600 </output_densities>
 	<write_passive_cells> 1 </write_passive_cells>
 	<friction_passive_cells> 10 </friction_passive_cells>
@@ -17,7 +17,7 @@
 	<bounding_box_ymax> 300 </bounding_box_ymax>
 	<bounding_box_zmin> -300 </bounding_box_zmin>
 	<bounding_box_zmax> 300 </bounding_box_zmax>
-	<number_of_threads> 16 </number_of_threads>  <!-- parallelization with openmp -->
+	<number_of_threads> 6 </number_of_threads>  <!-- parallelization with openmp -->
 	<mode_cell_cycle> 0  </mode_cell_cycle>
 	<number_of_densities> 1 </number_of_densities>
 	<density_0> oxygen </density_0>
